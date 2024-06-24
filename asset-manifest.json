@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moia/static/css/main.9297ce3f.css",
-    "main.js": "/moia/static/js/main.9c5bc4ab.js",
+    "main.css": "/moia/static/css/main.7f766c9e.css",
+    "main.js": "/moia/static/js/main.7234184f.js",
     "static/css/759.864168c7.chunk.css": "/moia/static/css/759.864168c7.chunk.css",
     "static/js/759.3568ecdb.chunk.js": "/moia/static/js/759.3568ecdb.chunk.js",
     "static/js/453.803afec5.chunk.js": "/moia/static/js/453.803afec5.chunk.js",
@@ -79,14 +79,14 @@
     "static/media/next.svg": "/moia/static/media/next.7488b8169c0530dac561f860a441ad0e.svg",
     "static/media/minus.svg": "/moia/static/media/minus.51e49dc39f43fa484a38730b933d46da.svg",
     "static/media/down.svg": "/moia/static/media/down.d8d27e74e922d458a56d969ddb96dbe0.svg",
-    "main.9297ce3f.css.map": "/moia/static/css/main.9297ce3f.css.map",
-    "main.9c5bc4ab.js.map": "/moia/static/js/main.9c5bc4ab.js.map",
+    "main.7f766c9e.css.map": "/moia/static/css/main.7f766c9e.css.map",
+    "main.7234184f.js.map": "/moia/static/js/main.7234184f.js.map",
     "759.864168c7.chunk.css.map": "/moia/static/css/759.864168c7.chunk.css.map",
     "759.3568ecdb.chunk.js.map": "/moia/static/js/759.3568ecdb.chunk.js.map",
     "453.803afec5.chunk.js.map": "/moia/static/js/453.803afec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9297ce3f.css",
-    "static/js/main.9c5bc4ab.js"
+    "static/css/main.7f766c9e.css",
+    "static/js/main.7234184f.js"
   ]
 }
