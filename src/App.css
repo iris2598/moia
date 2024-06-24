@@ -7,15 +7,15 @@
   pointer-events: none;
 }
 
-@font-face {
+/* @font-face {
   font-family: "NotoSans";
   src: local("NotoSans"),
-    url("./assets/fonts/NotoSansKR-VariableFont_wght.ttf") format("ttf");
-}
+    url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+} */
 @font-face {
   font-family: "Inter";
   src: local("Inter"),
-    url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+    url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
