@@ -20,7 +20,7 @@ function App() {
       <main>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path="/" element={<Interactive />} />
+            <Route path="/moia" element={<Interactive />} />
             <Route path="/introduction" element={<Introduction />} />
             <Route path="/adoption" element={<Adoption />} />
             <Route path="/appointment" element={<Appointment />} />

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./introduction.module.css";
 import intro_back from "../../assets/img/intro_back.png";
 import more from "../../assets/icon/more.svg";
@@ -71,6 +72,8 @@ const images = [
 ];
 
 const Introduction = () => {
+  const navigate = useNavigate();
+
   const [save, setSave] = useState(0);
   const [dragged, setDragged] = useState(0);
   const [sum, setSum] = useState(0);
@@ -184,7 +187,12 @@ const Introduction = () => {
             </p>
             <p className={styles.para2}>MOIA는 어떤 엉뚱함을 보여줄까요?</p>
           </div>
-          <button className={styles.adopt_btn}>입양하기</button>
+          <button
+            className={styles.adopt_btn}
+            onClick={() => navigate(`/adoption`)}
+          >
+            입양하기
+          </button>
         </div>
         <div ref={threeRef} className={styles.three}>
           <img className={styles.three_legend} src={three_legend} alt="" />
