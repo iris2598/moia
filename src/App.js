@@ -7,7 +7,6 @@ import Interactive from "./components/pages/Interactive";
 import Adoption from "./components/pages/Adoption";
 import Appointment from "./components/pages/Appointment";
 import Login from "./components/pages/Login";
-// import Introduction from "./components/pages/Introduction";
 
 const Introduction = lazy(() => import("./components/pages/Introduction"));
 
@@ -20,17 +19,14 @@ function App() {
       <main>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path="/moia" element={<Interactive />} />
+            <Route path="" element={<Interactive />} />
             <Route path="/introduction" element={<Introduction />} />
             <Route path="/adoption" element={<Adoption />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/login" element={<Login />} />
             {/* <Route path='*' element={<NotFound />} />
                   <Route path='/' element={<Navigate to='/auth' />} />
-                  <Route path='/login' element={<Login />} />
-                  <Route path='/auth' element={<Auth />} />
-                  <Route path='/onboarding/:step' element={<Onboarding />} />
-                  <Route path='/join' element={<Join />} /> */}
+                  <Route path='/onboarding/:step' element={<Onboarding />} />*/}
           </Routes>
         </Suspense>
       </main>

@@ -16,7 +16,12 @@ const Layout = () => {
 
   return (
     <div className={styles.layout}>
-      <img className={styles.logo} src={moia} alt="moia logo" />
+      <img
+        className={styles.logo}
+        src={moia}
+        alt="moia logo"
+        onClick={() => navigate(`/`)}
+      />
       <div className={styles.item_container}>
         {menus.map((menu, index) => (
           <div
