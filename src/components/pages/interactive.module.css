@@ -1,0 +1,202 @@
+.interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hungry {
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  align-items: center;
+  cursor: none;
+  pointer-events: none;
+}
+
+.background {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+.background_r {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.hungry_1 {
+  width: 60vw;
+  position: fixed;
+  top: -35px;
+  left: 0px;
+}
+.hungry_2 {
+  width: 85vw;
+  position: fixed;
+  bottom: -100px;
+  right: 0px;
+}
+.upset_1 {
+  height: 150vw;
+  rotate: 270deg;
+  position: fixed;
+  top: -70%;
+  left: 0px;
+}
+.interest_1 {
+  width: 8vw;
+  margin: 12vw;
+}
+.ignore_1 {
+  position: absolute;
+  top: 10vh;
+  left: 8vw;
+  width: 25vw;
+}
+.ignore_2 {
+  position: absolute;
+  top: 37vh;
+  right: 8vw;
+  width: 10vw;
+}
+.ignore_3 {
+  position: absolute;
+  top: 55vh;
+  left: 30vw;
+  width: 70vw;
+}
+.ignore_4 {
+  position: absolute;
+  top: 85vh;
+  left: -7vw;
+  width: 15vw;
+}
+
+.line {
+  z-index: 2;
+}
+
+.hun_board {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.board {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.free_board {
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.row_rev {
+  display: flex;
+  rotate: 180deg;
+  position: absolute;
+  width: 100vw;
+  top: 0px;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  justify-content: center;
+  bottom: 0px;
+}
+.hungry_moia {
+  width: 30vw;
+}
+.upset_moia {
+  width: 200px;
+}
+.interest_moia {
+  width: 30vw;
+  margin: 1vw;
+}
+.ignore_moia_r {
+  width: 12vw;
+  transform: translate(-5vw, -16.7vw);
+  transform-origin: center bottom;
+  visibility: hidden;
+}
+.path1 {
+  width: 120vw;
+  height: 80vh;
+  position: absolute;
+  left: -5vw;
+  top: -1vw;
+}
+.ignore_moia {
+  width: 12vw;
+  transform: translate(-5vw, -16.7vw);
+  transform-origin: center bottom;
+  visibility: hidden;
+}
+.path2 {
+  width: 120vw;
+  height: 80vh;
+  position: absolute;
+  left: -5vw;
+  bottom: -6vw;
+}
+
+.btn_container {
+  position: fixed;
+  bottom: 62px;
+  z-index: 4;
+  cursor: pointer;
+}
+.shuffle_btn {
+  border-radius: 20px;
+  border: 2px solid;
+  background-color: transparent;
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cursor {
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cable {
+  width: 30px;
+}

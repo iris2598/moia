@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cal_toggle {
+  display: flex;
+}
+.toggle_name {
+  margin: 0;
+  font-size: 13pt;
+  font-weight: 600;
+}
+.toggle {
+  background-color: transparent;
+  border: none;
+  margin-top: -5px;
+  margin-left: 3px;
+}
+.toggle img {
+  width: 12px;
+}
+.cal_body {
+  width: 100%;
+  margin-top: 5px;
+}
+.week {
+  display: flex;
+  justify-content: space-between;
+}
+.block {
+  width: 2vw;
+  font-size: 10pt;
+}
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+.no_day {
+  width: 2vw;
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one_day {
+  width: 2vw;
+  height: 2vw;
+  font-size: 11pt;
+  border: 1px solid #e0d8ff;
+  border-radius: 100px;
+  background-color: #f9f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cal_legend {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.legend_container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.full {
+  width: 10px;
+  height: 10px;
+  background-color: #8e76e9;
+  border: 1px solid #8e76e9;
+  border-radius: 6px;
+}
+.dash {
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  border: 1px dashed #8e76e9;
+}
+.legend {
+  margin: 0;
+  font-size: 8pt;
+}

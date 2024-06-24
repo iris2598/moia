@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 70vw;
+  text-align: left;
+  position: fixed;
+  top: 150px;
+}
+.title img {
+  position: fixed;
+  width: 100vw;
+  height: 36vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: height 0.5s ease-out;
+  z-index: 1;
+}
+.l_title {
+  font-size: 30pt;
+  font-weight: 800;
+  margin: 0;
+  z-index: 2;
+}
+.l_content {
+  font-size: 12pt;
+  line-height: 20pt;
+  z-index: 2;
+  transition: opacity 0.2s ease-out;
+}
+.content {
+  display: flex;
+  width: 70vw;
+  height: 70vh;
+  justify-content: space-between;
+  z-index: 2;
+  position: absolute;
+  top: 34vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.card_container {
+  width: 19vw;
+  height: 60vh;
+  border: 1px solid #e0d8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5vw;
+  gap: 1.2vw;
+  border-radius: 16px;
+}
+.container_title {
+  width: 100%;
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}
+.l_card {
+  width: 100%;
+  height: 18vw;
+  border: 1px solid #e0d8ff;
+  border-radius: 10px;
+  background-color: #f9f8ff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.l_card_title {
+  margin: 1vw 1vw;
+  font-size: 12pt;
+  font-weight: bold;
+  z-index: 4;
+}
+.l_card_img {
+  width: 8vw;
+  margin: -1vw 5vw;
+  z-index: 5;
+}
+.m_card {
+  width: 100%;
+  height: 12vh;
+  border: 1px solid #e0d8ff;
+  border-radius: 10px;
+  background-color: #f9f8ff;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 15px;
+}
+.ms_card {
+  width: 100%;
+  height: 6vh;
+  border: 1px solid #e0d8ff;
+  border-radius: 10px;
+  background-color: #f9f8ff;
+  text-align: left;
+}
+.m_card_content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.m_card_title {
+  margin: 0 1vw;
+  font-size: 12pt;
+  font-weight: bold;
+}
+.m_card_text {
+  margin: 0 1vw;
+  font-size: 10pt;
+  line-height: 20px;
+}
+.m_card_img {
+  height: 10vh;
+  padding-left: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0d8ff;
+  border-radius: 10px;
+  background-color: #f9f8ff;
+  padding: 15px;
+  color: #e0d8ff;
+  font-size: 11pt;
+  font-weight: bold;
+  position: relative;
+  bottom: 1vh;
+}
+.btn_img {
+  width: 8px;
+}

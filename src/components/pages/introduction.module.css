@@ -1,0 +1,133 @@
+.container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  overflow: hidden;
+}
+.intro {
+  width: 100%;
+  text-align: left;
+}
+.content {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.intro_back {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.line1 {
+  width: 100vw;
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+.line2 {
+  width: 100vw;
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+.line3 {
+  width: 100vw;
+  position: absolute;
+  top: 400px;
+  left: 0;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.sub_title {
+  margin: 0;
+  font-size: 25pt;
+  font-weight: bold;
+}
+.main_title {
+  margin: 0;
+  font-size: 38pt;
+  font-weight: bold;
+}
+.detail {
+  color: white;
+}
+.para1 {
+  font-size: 15pt;
+  line-height: 22pt;
+}
+.para2 {
+  font-size: 15pt;
+  font-weight: bold;
+  line-height: 22pt;
+}
+.adopt_btn {
+  width: 180px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 15pt;
+  color: white;
+  font-weight: bold;
+  margin-top: 18vh;
+}
+
+.three {
+  position: absolute;
+  top: -15vh;
+  right: 1vw;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.three_img {
+  width: 60vw;
+  position: relative;
+  left: 2vw;
+}
+.three_legend {
+  width: 30vw;
+  position: relative;
+  top: 92vh;
+}
+
+.more_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.more {
+  width: 25px;
+  height: 10px;
+  z-index: 2;
+}
+
+.ai {
+  width: 100%;
+  text-align: left;
+}
+.product {
+  width: 100%;
+  text-align: left;
+}
+.case {
+  width: 100%;
+  text-align: left;
+}
+.photo {
+  width: 100%;
+  text-align: left;
+}
+.btn {
+  width: 100%;
+  text-align: left;
+}

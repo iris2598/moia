@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "NotoSans";
+  src: local("NotoSans"),
+    url("./assets/fonts/NotoSansKR-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +24,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter";
 }
 
 .App-link {
