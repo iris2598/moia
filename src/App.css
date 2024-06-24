@@ -12,11 +12,7 @@
   src: local("NotoSans"),
     url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 } */
-@font-face {
-  font-family: "Inter";
-  src: local("Inter"),
-    url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,7 +32,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Inter";
 }
 
 .App-link {

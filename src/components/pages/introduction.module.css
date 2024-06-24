@@ -104,6 +104,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  /* position: absolute;
+  bottom: 0; */
 }
 .more {
   width: 25px;
