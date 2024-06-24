@@ -20,7 +20,7 @@ const Layout = () => {
         className={styles.logo}
         src={moia}
         alt="moia logo"
-        onClick={() => navigate(`/`)}
+        onClick={() => navigate(`/moia`)}
       />
       <div className={styles.item_container}>
         {menus.map((menu, index) => (
