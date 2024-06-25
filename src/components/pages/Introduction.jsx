@@ -255,11 +255,11 @@ const Introduction = () => {
       <div className={styles.product}>
         <p className={styles.mid_title}>About MOIA</p>
         <img className={styles.product_img} src={profile} alt="" />
-        <div className={styles.product_content}>
+        {/* <div className={styles.product_content}>
           <p className={styles.product_detail1}></p>
           <p className={styles.product_detail2}></p>
           <p className={styles.product_detail3}></p>
-        </div>
+        </div> */}
       </div>
       {/* <div className={styles.case}>
         <p className={styles.mid_title}>MOIA와 함께하면,</p>
