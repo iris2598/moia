@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/moia/static/css/main.cb781743.css",
-    "main.js": "/moia/static/js/main.5783278e.js",
-    "static/css/759.1f7393de.chunk.css": "/moia/static/css/759.1f7393de.chunk.css",
+    "main.js": "/moia/static/js/main.b22216fa.js",
+    "static/css/759.02d53b3d.chunk.css": "/moia/static/css/759.02d53b3d.chunk.css",
     "static/js/759.a1dc8bf5.chunk.js": "/moia/static/js/759.a1dc8bf5.chunk.js",
     "static/js/453.803afec5.chunk.js": "/moia/static/js/453.803afec5.chunk.js",
     "static/media/hospital.png": "/moia/static/media/hospital.144355d8d50e75167f5d.png",
@@ -84,13 +84,13 @@
     "static/media/minus.svg": "/moia/static/media/minus.51e49dc39f43fa484a38730b933d46da.svg",
     "static/media/down.svg": "/moia/static/media/down.d8d27e74e922d458a56d969ddb96dbe0.svg",
     "main.cb781743.css.map": "/moia/static/css/main.cb781743.css.map",
-    "main.5783278e.js.map": "/moia/static/js/main.5783278e.js.map",
-    "759.1f7393de.chunk.css.map": "/moia/static/css/759.1f7393de.chunk.css.map",
+    "main.b22216fa.js.map": "/moia/static/js/main.b22216fa.js.map",
+    "759.02d53b3d.chunk.css.map": "/moia/static/css/759.02d53b3d.chunk.css.map",
     "759.a1dc8bf5.chunk.js.map": "/moia/static/js/759.a1dc8bf5.chunk.js.map",
     "453.803afec5.chunk.js.map": "/moia/static/js/453.803afec5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb781743.css",
-    "static/js/main.5783278e.js"
+    "static/js/main.b22216fa.js"
   ]
 }
