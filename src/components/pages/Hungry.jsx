@@ -27,32 +27,40 @@ const Hungry = () => {
   const [image2, setImage2] = useState(hungry_3);
   const [image3, setImage3] = useState(hungry_2);
 
-  const handleClick1 = () => {
-    if (image1 == hungry_3) {
-      setImage1(hungry);
+  // const handleClick1 = () => {
+  //   if (image1 === hungry_3) {
+  //     setImage1(hungry);
+  //     setTimeout(() => {
+  //       setImage1(num[Math.floor(Math.random() * 3)]);
+  //     }, 3000);
+  //   }
+  //   console.log("gpdl");
+  // };
+  // const handleClick2 = () => {
+  //   if (image2 === hungry_3) {
+  //     setImage2(hungry);
+  //     setTimeout(() => {
+  //       setImage2(num[Math.floor(Math.random() * 3)]);
+  //     }, 3000);
+  //   }
+  //   console.log("gpdl");
+  // };
+  // const handleClick3 = () => {
+  //   if (image3 === hungry_3) {
+  //     setImage3(hungry);
+  //     setTimeout(() => {
+  //       setImage3(num[Math.floor(Math.random() * 3)]);
+  //     }, 3000);
+  //   }
+  //   console.log("gpdl");
+  // };
+  const handleClick = (image, setImage) => {
+    if (image === hungry_3) {
+      setImage(hungry);
       setTimeout(() => {
-        setImage1(num[Math.floor(Math.random() * 3)]);
+        setImage(num[Math.floor(Math.random() * 3)]);
       }, 3000);
     }
-    console.log("gpdl");
-  };
-  const handleClick2 = () => {
-    if (image2 == hungry_3) {
-      setImage2(hungry);
-      setTimeout(() => {
-        setImage2(num[Math.floor(Math.random() * 3)]);
-      }, 3000);
-    }
-    console.log("gpdl");
-  };
-  const handleClick3 = () => {
-    if (image3 == hungry_3) {
-      setImage3(hungry);
-      setTimeout(() => {
-        setImage3(num[Math.floor(Math.random() * 3)]);
-      }, 3000);
-    }
-    console.log("gpdl");
   };
 
   useEffect(() => {
@@ -82,19 +90,19 @@ const Hungry = () => {
           className={styles.hungry_moia}
           src={image1}
           alt=""
-          onClick={handleClick1}
+          onClick={() => handleClick(image1, setImage1)}
         />
         <img
           className={styles.hungry_moia}
           src={image2}
           alt=""
-          onClick={handleClick2}
+          onClick={() => handleClick(image2, setImage2)}
         />
         <img
           className={styles.hungry_moia}
           src={image3}
           alt=""
-          onClick={handleClick3}
+          onClick={() => handleClick(image3, setImage3)}
         />
       </div>
       <div id="cursor" className={styles.cursor} ref={cursorRef}>

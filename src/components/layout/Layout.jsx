@@ -12,7 +12,7 @@ const Layout = () => {
   const menus = [
     { item: "introduction", text: "모야 소개", icon: introductionIcon },
     { item: "appointment", text: "병원 예약", icon: appointmentIcon },
-    { item: "login", text: "로그인", icon: loginIcon },
+    { item: "moia", text: "로그인", icon: loginIcon },
   ];
 
   const changeTheme = () => {

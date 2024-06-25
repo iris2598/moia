@@ -121,23 +121,55 @@
   font-weight: bold;
 }
 .ai {
+  z-index: 2;
   margin-top: 10vh;
   width: 100%;
   text-align: left;
 }
+.ai_img {
+  width: 100%;
+}
+.ai_detail {
+  text-align: right;
+  font-size: 13pt;
+  line-height: 20pt;
+  margin: 12px 0 25px 0;
+}
+.ai_two {
+  display: flex;
+}
+.ai_two_i {
+  margin: 5px;
+}
 .product {
+  z-index: 2;
   width: 100%;
   text-align: left;
 }
+.product_img {
+  width: 100%;
+}
 .case {
+  z-index: 2;
   width: 100%;
   text-align: left;
 }
 .photo {
+  z-index: 2;
   width: 100%;
   text-align: left;
 }
+.photo_content {
+  display: flex;
+  gap: 1vw;
+}
+.photo_card {
+  width: 20vw;
+  border-radius: 1vw;
+}
+
 .btn_container {
+  z-index: 3;
   width: 70vw;
   box-sizing: border-box;
   text-align: left;

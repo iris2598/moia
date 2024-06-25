@@ -2,7 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./introduction.module.css";
 import intro_back from "../../assets/img/intro_back.png";
-import more from "../../assets/icon/more.svg";
+import profile from "../../assets/img/intro/profile.jpeg";
+import manu from "../../assets/img/intro/manu.jpeg";
+import fan from "../../assets/img/intro/fan.jpeg";
+import alarm from "../../assets/img/intro/alarm.jpeg";
+import ball from "../../assets/img/intro/ball.jpeg";
+import five from "../../assets/img/intro/five.jpeg";
+import two from "../../assets/img/intro/two.jpeg";
+import ball2 from "../../assets/img/intro/ball2.jpeg";
+import train from "../../assets/img/intro/train.png";
+import interest from "../../assets/img/intro/interest.gif";
+import hungry from "../../assets/img/intro/hungry.gif";
+import ignore from "../../assets/img/intro/ignore.gif";
+import upset from "../../assets/img/intro/upset.gif";
 import next from "../../assets/icon/next.svg";
 import three_legend from "../../assets/img/3d/three_legend.png";
 
@@ -85,24 +97,24 @@ const Introduction = () => {
   const threeImgRef = useRef(null);
   const threeRef = useRef(null);
 
-  useEffect(() => {
-    window.addEventListener("wheel", (e) => {
-      e.preventDefault();
-    });
+  // useEffect(() => {
+  //   window.addEventListener("wheel", (e) => {
+  //     e.preventDefault();
+  //   });
 
-    const aiElement = document.querySelector(".ai");
-    const productElement = document.querySelector(".product");
-    const caseElement = document.querySelector(".case");
-    const photoElement = document.querySelector(".photo");
+  //   const aiElement = document.querySelector(".ai");
+  //   const productElement = document.querySelector(".product");
+  //   const caseElement = document.querySelector(".case");
+  //   const photoElement = document.querySelector(".photo");
 
-    // 요소들이 존재할 때만 offsetTop 읽기
-    if (aiElement && productElement && caseElement && photoElement) {
-      const ai_location = aiElement.offsetTop;
-      const product_location = productElement.offsetTop;
-      const case_location = caseElement.offsetTop;
-      const photo_location = photoElement.offsetTop;
-    }
-  }, []);
+  //   // 요소들이 존재할 때만 offsetTop 읽기
+  //   if (aiElement && productElement && caseElement && photoElement) {
+  //     const ai_location = aiElement.offsetTop;
+  //     const product_location = productElement.offsetTop;
+  //     const case_location = caseElement.offsetTop;
+  //     const photo_location = photoElement.offsetTop;
+  //   }
+  // }, []);
 
   useEffect(() => {
     const three_img = threeImgRef.current;
@@ -224,28 +236,32 @@ const Introduction = () => {
           />
         </div>
       </div>
-      <div className={styles.more_container}>
-        <img className={styles.more} src={more} alt="" />
-      </div>
       <div className={styles.ai}>
-        <p className={styles.mid_title}>인공지능 크리쳐</p>
-        <img className={styles.ai_img} />
-        <div className={styles.ai_content}>
-          <p className={styles.ai_detail1}></p>
-          <p className={styles.ai_detail2}></p>
-          <p className={styles.ai_detail3}></p>
+        <p className={styles.mid_title}>뭐야? 뭐야!</p>
+        <div className={styles.ai_two}>
+          <img className={styles.ai_two_i} src={upset} alt="" />
+          <img className={styles.ai_two_i} src={interest} alt="" />
+        </div>
+        <div className={styles.ai_two}>
+          <img className={styles.ai_two_i} src={ignore} alt="" />
+          <img className={styles.ai_two_i} src={hungry} alt="" />
+        </div>
+        <div className={styles.ai_detail}>
+          모야는 엉뚱한 AI 반려봇으로, 가끔은 예상할 수 없는 행동을 보여줍니다.{" "}
+          <br />
+          일상 속에서 엉뚱발랄한 모야를 만나보세요!
         </div>
       </div>
       <div className={styles.product}>
-        <p className={styles.mid_title}>자유로운 이동과 움직임</p>
-        <img className={styles.product_img} />
+        <p className={styles.mid_title}>About MOIA</p>
+        <img className={styles.product_img} src={profile} alt="" />
         <div className={styles.product_content}>
           <p className={styles.product_detail1}></p>
           <p className={styles.product_detail2}></p>
           <p className={styles.product_detail3}></p>
         </div>
       </div>
-      <div className={styles.case}>
+      {/* <div className={styles.case}>
         <p className={styles.mid_title}>MOIA와 함께하면,</p>
         <img className={styles.case_img} />
         <div className={styles.case_content}>
@@ -253,16 +269,20 @@ const Introduction = () => {
           <p className={styles.case_detail2}></p>
           <p className={styles.case_detail3}></p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.photo}>
         <p className={styles.mid_title}>
           MOIA는 당신에게 어떤 존재가 되어줄까요?
         </p>
         <img className={styles.photo_img} />
         <div className={styles.photo_content}>
-          <p className={styles.photo_detail1}></p>
-          <p className={styles.photo_detail2}></p>
-          <p className={styles.photo_detail3}></p>
+          <img className={styles.photo_card} src={five} alt="" />
+          <img className={styles.photo_card} src={ball} alt="" />
+          <img className={styles.photo_card} src={fan} alt="" />
+          <img className={styles.photo_card} src={alarm} alt="" />
+          <img className={styles.photo_card} src={ball2} alt="" />
+          <img className={styles.photo_card} src={train} alt="" />
+          <img className={styles.photo_card} src={two} alt="" />
         </div>
       </div>
       <div className={styles.btn_container}>
