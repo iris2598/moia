@@ -5,6 +5,8 @@ import ignore_1 from "../../assets/img/moia/ignore_1.png";
 import ignore_2 from "../../assets/img/moia/ignore_2.png";
 import ignore_3 from "../../assets/img/moia/ignore_3.png";
 import ignore_4 from "../../assets/img/moia/ignore_4.png";
+import ignore_5 from "../../assets/img/moia/ignore_5.png";
+import { useEffect } from "react";
 
 const Ignore = () => {
   const ignore2 = [
@@ -25,6 +27,49 @@ const Ignore = () => {
     ignore_4,
     ignore_4,
   ];
+
+  useEffect(() => {
+    // Adding event listeners to all 'image' elements with the class 'ignore_moia' and 'ignore_moia_r'
+    const images = document.querySelectorAll("#ignore_moia");
+    images.forEach((image, index) => {
+      image.addEventListener("click", () => {
+        image.setAttribute("href", ignore_2);
+        setTimeout(() => {
+          image.setAttribute("href", ignore_3);
+        }, 2000);
+        setTimeout(() => {
+          image.setAttribute("href", ignore_1);
+        }, 6000);
+      });
+    });
+    const images_r = document.querySelectorAll("#ignore_moia_r");
+    images_r.forEach((image, index) => {
+      image.addEventListener("click", () => {
+        image.setAttribute("href", ignore_2);
+        setTimeout(() => {
+          image.setAttribute("href", ignore_5);
+        }, 2000);
+        setTimeout(() => {
+          image.setAttribute("href", ignore_4);
+        }, 6000);
+      });
+    });
+
+    // Clean up the event listeners on component unmount
+    return () => {
+      images.forEach((image, index) => {
+        image.removeEventListener("click", () => {
+          console.log("초기화 완");
+        });
+      });
+      images_r.forEach((image, index) => {
+        image.removeEventListener("click", () => {
+          console.log("초기화 완");
+        });
+      });
+    };
+  }, []);
+
   return (
     <div>
       <div className={styles.background}>
@@ -43,7 +88,12 @@ const Ignore = () => {
             stroke="black"
           ></path>
           {ignore1.map((n, index) => (
-            <image key={index} href={n} className={styles.ignore_moia_r}>
+            <image
+              key={index}
+              id="ignore_moia_r"
+              href={n}
+              className={styles.ignore_moia_r}
+            >
               <animate
                 attributeName="visibility"
                 from="hidden"
@@ -72,7 +122,12 @@ const Ignore = () => {
             stroke="black"
           ></path>
           {ignore2.map((n, index) => (
-            <image key={index} href={n} className={styles.ignore_moia}>
+            <image
+              key={index}
+              id="ignore_moia"
+              href={n}
+              className={styles.ignore_moia}
+            >
               <animate
                 attributeName="visibility"
                 from="hidden"

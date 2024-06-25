@@ -6,7 +6,8 @@
   overflow: hidden;
 }
 .intro {
-  width: 100%;
+  width: 100vw;
+  height: 80vh;
   text-align: left;
 }
 .content {
@@ -92,20 +93,22 @@
 .three_img {
   width: 60vw;
   position: relative;
-  left: 2vw;
+  left: 0;
 }
 .three_legend {
   width: 30vw;
   position: relative;
-  top: 92vh;
+  top: 93vh;
+  right: 2vw;
 }
 
 .more_container {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  left: 0;
+  bottom: 5vh;
 }
 .more {
   width: 25px;
@@ -113,7 +116,12 @@
   z-index: 2;
 }
 
+.mid_title {
+  font-size: 20pt;
+  font-weight: bold;
+}
 .ai {
+  margin-top: 10vh;
   width: 100%;
   text-align: left;
 }
@@ -129,7 +137,22 @@
   width: 100%;
   text-align: left;
 }
-.btn {
-  width: 100%;
+.btn_container {
+  width: 70vw;
+  box-sizing: border-box;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  border: 1px solid #d6cbff;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: #886fe8;
 }

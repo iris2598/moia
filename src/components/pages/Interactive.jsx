@@ -12,9 +12,9 @@ const Interactive = () => {
   const [previousNumber, setPreviousNumber] = useState(0);
   const [randomNumber, setRandomNumber] = useState(0);
   const [showHungry, setShowHungry] = useState(false);
-  const [showUpset, setShowUpset] = useState(true);
+  const [showUpset, setShowUpset] = useState(false);
   const [showInterest, setShowInterest] = useState(false);
-  const [showIgnore, setShowIgnore] = useState(false);
+  const [showIgnore, setShowIgnore] = useState(true);
 
   const shuffleTheme = () => {
     let newRandomNumber;
@@ -46,7 +46,6 @@ const Interactive = () => {
       setShowInterest(false);
       setShowIgnore(true);
     }
-    console.log("오엥");
   };
 
   return (

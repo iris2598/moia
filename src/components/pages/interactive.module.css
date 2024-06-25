@@ -14,12 +14,10 @@
 
 .background {
   z-index: 1;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 0px;
-  left: 0px;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
 }
@@ -50,9 +48,6 @@
 .upset_1 {
   height: 150vw;
   rotate: 270deg;
-  position: fixed;
-  top: -70%;
-  left: 0px;
 }
 .interest_1 {
   width: 8vw;
@@ -88,13 +83,14 @@
 }
 
 .hun_board {
-  z-index: 3;
+  z-index: 5;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0px;
   left: 0px;
+  gap: 4vw;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -137,20 +133,36 @@
   bottom: 0px;
 }
 .hungry_moia {
-  width: 30vw;
+  width: 26vw;
+  cursor: pointer;
 }
 .upset_moia {
-  width: 200px;
+  width: 15vw;
+  cursor: not-allowed;
 }
 .interest_moia {
   width: 30vw;
   margin: 1vw;
+  transform: translateY(20vh);
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+  cursor: pointer;
 }
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(20vh); /* 시작 위치 */
+  }
+  100% {
+    transform: translateY(45vh); /* 움직일 위치 */
+  }
+}
+
 .ignore_moia_r {
   width: 12vw;
   transform: translate(-5vw, -16.7vw);
   transform-origin: center bottom;
   visibility: hidden;
+  pointer-events: all;
+  cursor: pointer;
 }
 .path1 {
   width: 120vw;
@@ -164,6 +176,8 @@
   transform: translate(-5vw, -16.7vw);
   transform-origin: center bottom;
   visibility: hidden;
+  pointer-events: all;
+  cursor: pointer;
 }
 .path2 {
   width: 120vw;

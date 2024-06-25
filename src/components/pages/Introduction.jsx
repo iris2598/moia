@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./introduction.module.css";
 import intro_back from "../../assets/img/intro_back.png";
 import more from "../../assets/icon/more.svg";
+import next from "../../assets/icon/next.svg";
 import three_legend from "../../assets/img/3d/three_legend.png";
 
 import move_1 from "../../assets/img/3d/move_1.png";
@@ -83,6 +84,25 @@ const Introduction = () => {
 
   const threeImgRef = useRef(null);
   const threeRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("wheel", (e) => {
+      e.preventDefault();
+    });
+
+    const aiElement = document.querySelector(".ai");
+    const productElement = document.querySelector(".product");
+    const caseElement = document.querySelector(".case");
+    const photoElement = document.querySelector(".photo");
+
+    // 요소들이 존재할 때만 offsetTop 읽기
+    if (aiElement && productElement && caseElement && photoElement) {
+      const ai_location = aiElement.offsetTop;
+      const product_location = productElement.offsetTop;
+      const case_location = caseElement.offsetTop;
+      const photo_location = photoElement.offsetTop;
+    }
+  }, []);
 
   useEffect(() => {
     const three_img = threeImgRef.current;
@@ -207,13 +227,48 @@ const Introduction = () => {
       <div className={styles.more_container}>
         <img className={styles.more} src={more} alt="" />
       </div>
-      <div className={styles.ai}>인공지능 크리쳐 </div>
-      <div className={styles.product}>자유로운 이동과 움직임</div>
-      <div className={styles.case}>MOIA와 함께하면,</div>
-      <div className={styles.photo}>
-        MOIA는 당신에게 어떤 존재가 되어줄까요?
+      <div className={styles.ai}>
+        <p className={styles.mid_title}>인공지능 크리쳐</p>
+        <img className={styles.ai_img} />
+        <div className={styles.ai_content}>
+          <p className={styles.ai_detail1}></p>
+          <p className={styles.ai_detail2}></p>
+          <p className={styles.ai_detail3}></p>
+        </div>
       </div>
-      <div className={styles.btn}>MOIA를 입양하시겠어요?</div>
+      <div className={styles.product}>
+        <p className={styles.mid_title}>자유로운 이동과 움직임</p>
+        <img className={styles.product_img} />
+        <div className={styles.product_content}>
+          <p className={styles.product_detail1}></p>
+          <p className={styles.product_detail2}></p>
+          <p className={styles.product_detail3}></p>
+        </div>
+      </div>
+      <div className={styles.case}>
+        <p className={styles.mid_title}>MOIA와 함께하면,</p>
+        <img className={styles.case_img} />
+        <div className={styles.case_content}>
+          <p className={styles.case_detail1}></p>
+          <p className={styles.case_detail2}></p>
+          <p className={styles.case_detail3}></p>
+        </div>
+      </div>
+      <div className={styles.photo}>
+        <p className={styles.mid_title}>
+          MOIA는 당신에게 어떤 존재가 되어줄까요?
+        </p>
+        <img className={styles.photo_img} />
+        <div className={styles.photo_content}>
+          <p className={styles.photo_detail1}></p>
+          <p className={styles.photo_detail2}></p>
+          <p className={styles.photo_detail3}></p>
+        </div>
+      </div>
+      <div className={styles.btn_container}>
+        <button className={styles.btn}>MOIA를 입양하시겠어요?</button>
+        <img src={next} alt="" />
+      </div>
     </div>
   );
 };

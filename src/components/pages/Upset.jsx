@@ -13,6 +13,9 @@ const distance = (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1);
 const Upset = () => {
   const num = [upset_1, upset_2, upset_3, upset_4, upset_5];
 
+  const [sizes, setSizes] = useState(
+    num.map(() => 7 + Math.floor(Math.random() * 15))
+  );
   const [positions, setPositions] = useState(
     num.map(() => ({
       left: randomPosition(window.innerWidth - 200),
@@ -52,7 +55,6 @@ const Upset = () => {
           let newX = pos.left + dx;
           let newY = pos.top + dy;
 
-          // 화면 경계 체크
           if (newX <= 0 || newX >= window.innerWidth - 200) dx *= -1;
           if (newY <= 0 || newY >= window.innerHeight - 300) dy *= -1;
 
@@ -89,6 +91,7 @@ const Upset = () => {
             position: "absolute",
             left: `${left}px`,
             top: `${top}px`,
+            width: `${sizes[index]}vw`,
           };
           return (
             <div key={index}>
