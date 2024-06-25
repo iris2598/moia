@@ -276,13 +276,16 @@ const Introduction = () => {
         </p>
         <img className={styles.photo_img} />
         <div className={styles.photo_content}>
-          <img className={styles.photo_card} src={five} alt="" />
-          <img className={styles.photo_card} src={ball} alt="" />
-          <img className={styles.photo_card} src={fan} alt="" />
-          <img className={styles.photo_card} src={alarm} alt="" />
-          <img className={styles.photo_card} src={ball2} alt="" />
-          <img className={styles.photo_card} src={train} alt="" />
-          <img className={styles.photo_card} src={two} alt="" />
+          <div className={styles.photo_col}>
+            <img className={styles.photo_card} src={five} alt="" />
+            <img className={styles.photo_card} src={ball} alt="" />
+            <img className={styles.photo_card} src={fan} alt="" />
+          </div>
+          <div className={styles.photo_col2}>
+            <img className={styles.photo_card} src={alarm} alt="" />
+            <img className={styles.photo_card} src={train} alt="" />
+            <img className={styles.photo_card} src={two} alt="" />
+          </div>
         </div>
       </div>
       <div className={styles.btn_container}>

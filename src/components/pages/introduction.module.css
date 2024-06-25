@@ -137,6 +137,7 @@
 }
 .ai_two {
   display: flex;
+  width: 100%;
 }
 .ai_two_i {
   margin: 5px;
@@ -161,10 +162,23 @@
 }
 .photo_content {
   display: flex;
+  flex-direction: column;
   gap: 1vw;
 }
+.photo_col {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+}
+.photo_col2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 0;
+}
 .photo_card {
-  width: 20vw;
+  width: 32%;
   border-radius: 1vw;
 }
 
